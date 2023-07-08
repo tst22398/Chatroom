@@ -1,0 +1,144 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.app {
+    position: relative;
+    min-height: 100vh;
+    background-color: #DDE6ED;
+    min-width: 300px;
+    transition: all .3s;
+}
+
+.screen {
+    display: none;
+}
+
+.screen.active {
+    display: flex;
+    flex-direction: column;
+}
+
+header {
+    text-align: center;
+    position: fixed;
+    display: block;
+    top: 0;
+    height: 70px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+main {
+    margin-top: 70px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(100vh - 170px);
+}
+
+footer {
+    text-align: center;
+    position: fixed;
+    display: block;
+    bottom: 0;
+    height: 100px;
+    margin: 0 auto;
+    width: 100%;
+}
+
+h1 {
+    padding: 20px;
+    color: #27374D;
+}
+
+.form-input + .form-input,
+input + button {
+    margin-top: 10px;
+}
+
+label {
+    display: block;
+    color: #526D82;
+}
+
+input,
+button {
+    background-color: none;
+    padding: 5px;
+    font-size: 18px;
+    border-radius: 2px;
+    border: 1px solid #27374D;
+    color: #526D82;
+    border: none;
+    transition: all .3s;
+    width: 100%;
+}
+
+input {
+    cursor: text;
+}
+
+button {
+    cursor: pointer;
+}
+
+input:focus {
+    outline: 2px solid #9DB2BF;
+}
+
+button:hover {
+    background-color: #9DB2BF;
+}
+
+#exit-btn {
+    font-size: 20px;
+    background-color: #DDE6ED;
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    right: 0;
+    top: 0;
+}
+
+.message-container {
+    display: block;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    height: 100%;
+    width: 100%;
+    overflow-y: scroll;
+}
+
+.message {
+    /* border: 1px solid black; */
+    font-size: 18px;
+    border-radius: 2px;
+    width: 100%;
+    padding: 4px;
+    overflow-wrap: break-word;
+}
+
+.my-message {
+    color: #391919;
+    text-align: right;
+    padding-left: 50px;
+}
+
+.other-message {
+    color: #391919;
+    padding-right: 50px;
+}
+
+.update {
+    text-align: center;
+    color: gray;
+    font-size: 10px;
+}
+
+.name {
+    font-size: 10px;
+}
