@@ -2,7 +2,7 @@ const express = require('express');
 const { createServer } = require('http');
 const { Server } = require('socket.io');
 const path = require('path');
-const PORT = 8080;
+const PORT = process.env.PORT || 8080;
 
 const app = express();
 const httpServer = createServer(app);
